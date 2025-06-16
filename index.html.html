@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEBOY SNACK - Fun & Playful Redesign</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    h1, h2, h3, .logo {
+      font-family: 'Fredoka', cursive;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-fuchsia-100 via-yellow-100 to-emerald-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-gradient-to-r from-yellow-200 via-pink-200 to-purple-200 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="https://i.imgur.com/sT3zpnD.jpeg" alt="Logo" class="w-12 h-12 rounded-3xl border-2 border-yellow-400">
+        <span class="text-2xl font-bold text-pink-600 logo">CEBOY SNACK</span>
+      </div>
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6 font-semibold">
+        <a href="#tentang" class="hover:text-purple-600 transition duration-300">Tentang</a>
+        <a href="#produk" class="hover:text-purple-600 transition duration-300">Produk</a>
+        <a href="#promo" class="hover:text-purple-600 transition duration-300">Promo</a>
+        <a href="#keunggulan" class="hover:text-purple-600 transition duration-300">Keunggulan</a>
+        <a href="#cara" class="hover:text-purple-600 transition duration-300">Cara Pesan</a>
+        <a href="#testimoni" class="hover:text-purple-600 transition duration-300">Testimoni</a>
+        <a href="#galeri" class="hover:text-purple-600 transition duration-300">Galeri</a>
+        <a href="#kontak" class="hover:text-purple-600 transition duration-300">Kontak</a>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menuToggle" class="text-purple-600 focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu Content -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white text-center py-4 space-y-2">
+      <a href="#tentang" class="block text-purple-600">Tentang</a>
+      <a href="#produk" class="block text-purple-600">Produk</a>
+      <a href="#promo" class="block text-purple-600">Promo</a>
+      <a href="#keunggulan" class="block text-purple-600">Keunggulan</a>
+      <a href="#cara" class="block text-purple-600">Cara Pesan</a>
+      <a href="#testimoni" class="block text-purple-600">Testimoni</a>
+      <a href="#galeri" class="block text-purple-600">Galeri</a>
+      <a href="#kontak" class="block text-purple-600">Kontak</a>
+    </div>
+  </header>
+
+  <script>
+    document.getElementById('menuToggle').addEventListener('click', function () {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Hero -->
+  <section class="relative text-center py-12 px-6 bg-gradient-to-br from-pink-200 via-yellow-100 to-emerald-100 overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/food.png')] opacity-10 z-0"></div>
+    <div class="absolute -top-20 -left-20 w-96 h-96 bg-gradient-to-br from-yellow-300 via-pink-400 to-fuchsia-400 rounded-2xl opacity-30 filter blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-tr from-purple-400 via-pink-300 to-yellow-300 rounded-full opacity-20 filter blur-2xl animate-pulse"></div>
+
+    <h1 class="relative text-3xl sm:text-4xl md:text-5xl font-bold text-fuchsia-700 mb-4 leading-tight z-10">Selamat Datang di <span class="text-orange-500">CEBOY SNACK</span></h1>
+    <p class="relative text-lg max-w-2xl mx-auto mb-6 z-10 text-gray-800">Cemilan inovatif dari kulit pisang dan singkong yang unik, lezat dan ramah lingkungan.</p>
+    <div class="relative space-y-4 z-10">
+      <a href="#produk" class="inline-block bg-purple-600 text-white px-5 py-2 text-sm rounded-full font-semibold hover:bg-purple-500 transition">Lihat Produk</a><br>
+      <a href="https://wa.me/62895620771839" target="_blank" class="inline-block bg-orange-500 text-white px-12 py-3 text-lg rounded-full font-semibold hover:bg-orange-400 transition">Pesan Sekarang</a>
+    </div>
+    <div class="relative mx-auto mt-6 w-fit bg-gradient-to-br from-pink-100 via-yellow-100 to-purple-100 backdrop-blur-xl rounded-2xl shadow-2xl z-10 p-4 ring-4 ring-white/40">
+  <img src="https://i.imgur.com/KWXr4UK.jpeg" alt="Hero Image" class="mx-auto w-[432px] md:w-[504px] rounded-2xl">
+</div>
+    </div>
+  </section>
+
+
+  <!-- Tentang Kami -->
+  <section id="tentang" class="relative py-20 px-6 text-center bg-gradient-to-br from-yellow-100 via-purple-100 to-white overflow-hidden">
+    <div class="absolute -top-10 -left-10 w-40 h-40 bg-pink-200 rounded-full opacity-30 blur-2xl"></div>
+    <div class="absolute bottom-0 right-0 w-32 h-32 bg-yellow-300 rounded-full opacity-20 blur-2xl"></div>
+    <div class="max-w-4xl mx-auto relative z-10">
+      <h2 class="text-4xl font-bold text-purple-600 mb-6">Tentang CEBOY</h2>
+      <p class="text-lg">Ceboy Snack adalah cemilan inovatif yang lahir dari semangat menciptakan camilan sehat, lezat, dan ramah lingkungan. Kami mengolah kulit pisang dan kulit singkong, yang sering dianggap limbah, menjadi keripik gurih dan manis yang bikin ketagihan.Dengan mengusung konsep zero waste, Ceboy Snack hadir bukan hanya untuk memanjakan lidah, tapi juga untuk memberikan dampak positif bagi lingkungan.Kami percaya bahwa setiap gigitan bisa membawa perubahan. Melalui produk kami, kami ingin mengajak masyarakat untuk lebih peduli terhadap keberlanjutan tanpa harus mengorbankan rasa.
+
+.</p>
+    </div>
+  </section>
+ 
+
+  <!-- Produk -->
+  <section id="produk" class="py-20 px-6">
+    <h2 class="text-4xl font-bold text-center text-orange-500 mb-12">Produk Kami</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-xl transition">
+        <img src="https://i.imgur.com/HsZZhHm.jpeg" class="w-full h-64 object-cover rounded-lg mb-4" alt="Produk 1">
+        <h3 class="text-xl font-bold text-pink-600 mb-2">Keripik Pisang Coklat</h3>
+        <p>Renyah dan manis dengan taburan bubuk coklat nikmat.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-xl transition">
+        <img src="https://i.imgur.com/XR2Zp4y.jpeg" class="w-full h-64 object-cover rounded-lg mb-4" alt="Produk 3">
+        <h3 class="text-xl font-bold text-yellow-500 mb-2">Paket Mix Ceboy</h3>
+        <p>Campuran rasa seru yang bikin nagih dalam satu paket hemat!</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-xl transition">
+        <img src="https://i.imgur.com/324X9BP.jpeg" class="w-full h-64 object-cover rounded-lg mb-4" alt="Produk 2">
+        <h3 class="text-xl font-bold text-orange-600 mb-2">Keripik Singkong Balado</h3>
+        <p>Pedas gurih khas balado untuk kamu pecinta rasa kuat.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Keunggulan -->
+  <section id="keunggulan" class="py-20 px-6 bg-gradient-to-br from-pink-50 via-yellow-50 to-purple-50 text-center">
+    <h2 class="text-4xl font-bold text-purple-600 mb-10">Keunggulan Kami</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div>
+        <h3 class="text-xl font-semibold mb-2 text-pink-600">Inovatif & Ramah Lingkungan</h3>
+        <p>Kami mengolah limbah kulit pisang dan singkong menjadi camilan lezat dan unik.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2 text-yellow-600">Tanpa Pengawet</h3>
+        <p>Semua produk kami dibuat segar tanpa bahan pengawet kimia berbahaya.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2 text-purple-600">Kemasan Estetik</h3>
+        <p>Desain kemasan kekinian yang cocok untuk hadiah dan hampers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cara Pesan -->
+  <section id="cara" class="py-20 px-6 text-center bg-white">
+    <h2 class="text-4xl font-bold text-orange-500 mb-10">Cara Pemesanan</h2>
+    <ol class="text-lg space-y-4 max-w-xl mx-auto list-decimal list-inside">
+      <li>Pilih produk favoritmu dari daftar produk di atas.</li>
+      <li>Hubungi kami melalui WhatsApp atau Instagram.</li>
+      <li>Transfer pembayaran dan konfirmasi alamat pengiriman.</li>
+      <li>Pesanan dikirim langsung ke rumahmu!</li>
+    </ol>
+  </section>
+
+  <!-- Promo -->
+  <section id="promo" class="py-20 px-6 bg-gradient-to-br from-yellow-200 to-pink-100">
+    <h2 class="text-4xl font-bold text-center text-pink-600 mb-12">Promo Spesial!</h2>
+    <div class="flex flex-col md:flex-row gap-10 justify-center">
+      <div class="bg-white p-6 rounded-xl shadow-md w-full md:w-1/2">
+        <h3 class="text-xl font-bold text-orange-500 mb-2">Diskon 10%!</h3>
+        <p>Pembelian pertama semua pelanggan baru di bulan ini.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md w-full md:w-1/2">
+        <h3 class="text-xl font-bold text-pink-500 mb-2">Gratis Ongkir</h3>
+        <p>Untuk area kota tertentu dengan minimal pembelian Rp30.000.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testimoni" class="py-20 px-6 bg-white text-center">
+    <h2 class="text-4xl font-bold text-pink-600 mb-12">Testimoni Pelanggan</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <div class="bg-pink-100 p-6 rounded-xl shadow-md">
+        <img src="https://i.imgur.com/DiyrA5p.jpeg" alt="Rina" class="w-20 h-20 mx-auto rounded-full mb-4 border-4 border-pink-400">
+        <p class="italic mb-2">"Keripiknya renyah, manis, dan beda dari yang lain!"</p>
+        <h3 class="font-bold text-pink-600">Rina</h3>
+      </div>
+      <div class="bg-yellow-100 p-6 rounded-xl shadow-md">
+        <img src="https://i.imgur.com/cNn8cZ5.jpeg" alt="Yoga" class="w-20 h-20 mx-auto rounded-full mb-4 border-4 border-yellow-400">
+        <p class="italic mb-2">"Produk unik & inovatif, cocok buat hampers juga."</p>
+        <h3 class="font-bold text-yellow-600">Yoga</h3>
+      </div>
+      <div class="bg-orange-100 p-6 rounded-xl shadow-md">
+        <img src="https://i.imgur.com/IZ2yGVV.jpeg" alt="Indah" class="w-20 h-20 mx-auto rounded-full mb-4 border-4 border-orange-400">
+        <p class="italic mb-2">"Keren banget idenya! Anak-anak jadi suka ngemil sehat."</p>
+        <h3 class="font-bold text-orange-600">Indah</h3>
+      </div>
+      <div class="bg-pink-100 p-6 rounded-xl shadow-md">
+        <img src="https://i.imgur.com/rwP7HNH.jpeg" alt="Bayu" class="w-20 h-20 mx-auto rounded-full mb-4 border-4 border-pink-400">
+        <p class="italic mb-2">"Rasanya gurih, gak nyangka dari kulit singkong!"</p>
+        <h3 class="font-bold text-pink-600">Bayu</h3>
+      </div>
+      <div class="bg-yellow-100 p-6 rounded-xl shadow-md">
+        <img src="https://i.imgur.com/lkcRx8W.jpeg" alt="Ayu" class="w-20 h-20 mx-auto rounded-full mb-4 border-4 border-yellow-400">
+        <p class="italic mb-2">"Packaging lucu dan ramah lingkungan, love it!"</p>
+        <h3 class="font-bold text-yellow-600">Ayu</h3>
+      </div>
+      <div class="bg-orange-100 p-6 rounded-xl shadow-md">
+        <img src="https://i.imgur.com/qToojmc.jpeg" alt="Dimas" class="w-20 h-20 mx-auto rounded-full mb-4 border-4 border-orange-400">
+        <p class="italic mb-2">"Cemilan sehat kekinian, cocok buat anak kos."</p>
+        <h3 class="font-bold text-orange-600">Dimas</h3>
+      </div>
+      <div class="bg-pink-100 p-6 rounded-xl shadow-md">
+        <img src="https://i.imgur.com/vT2iRxn.jpeg" alt="Nina" class="w-20 h-20 mx-auto rounded-full mb-4 border-4 border-pink-400">
+        <p class="italic mb-2">"Saya coba buat hampers lebaran, semua suka!"</p>
+        <h3 class="font-bold text-pink-600">Nina</h3>
+      </div>
+      <div class="bg-yellow-100 p-6 rounded-xl shadow-md">
+        <img src="https://i.imgur.com/LDQuBxQ.jpeg" alt="Hadi" class="w-20 h-20 mx-auto rounded-full mb-4 border-4 border-yellow-400">
+        <p class="italic mb-2">"Harganya bersahabat, cocok buat jualan ulang."</p>
+        <h3 class="font-bold text-yellow-600">Hadi</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="py-20 px-6 bg-pink-100 text-center">
+    <h2 class="text-4xl font-bold text-pink-600 mb-8">Kontak Kami</h2>
+    <p class="mb-4">Hubungi kami untuk pesanan dan info reseller:</p>
+    <div class="flex justify-center gap-4">
+      <a href="https://wa.me/62895620771839" target="_blank" class="bg-green-500 hover:bg-green-400 text-white px-6 py-3 rounded-full font-semibold">WhatsApp</a>
+      <a href="https://www.instagram.com/ceboy.snacks" target="_blank" class="bg-pink-500 hover:bg-pink-400 text-white px-6 py-3 rounded-full font-semibold">Instagram</a>
+    </div>
+  </section>
+ <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/62895620771839" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 20l1.29-1.29a1 1 0 01.71-.29h.58c1.34 0 2.63-.26 3.83-.77A9 9 0 0021 12a9 9 0 00-9-9 9 9 0 00-7.84 13.26c-.51 1.2-.77 2.49-.77 3.83v.58a1 1 0 01-.29.71L3 20z" />
+    </svg>
+  </a>
+
+  <
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-8 text-gray-500 text-sm">
+    <p>© 2025 CEBOY SNACK. Camilan Lokal, Dampak Global.</p>
+  </footer>
+
+</body>
+</html>
